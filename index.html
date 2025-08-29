@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawadip Karki - Full Stack Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #34495e;
+            --bg-light: #ecf0f1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+
+        .demo-card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .demo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .code-example {
+            background-color: #f8f9fa;
+            border-left: 4px solid var(--secondary-color);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+        }
+
+        .interactive-demo {
+            background-color: var(--bg-light);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: var(--secondary-color);
+        }
+
+        .btn-demo {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-demo:hover {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .skill-badge {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary-color);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Nawadip Karki</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fullstack">Full Stack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#css">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bootstrap">Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#javascript">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<section id="home" class="hero-section">
+    <div class="container">
+        
+        <img src="nawadip.jpg" alt="Nawadip Karki" class="rounded-circle mb-4" 
+             style="width:150px; height:150px; object-fit:cover; border:4px solid white;">
+
+        <h1 class="display-4 fw-bold mb-3">Nawadip Karki</h1>
+        <p class="lead mb-4">Junior Full Stack Developer Portfolio</p>
+        <p class="mb-4">CET138 Full Stack Development - Assignment 1</p>
+        <div>
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">Bootstrap</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Full Stack</span>
+        </div>
+    </div>
+</section>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        
+        <!-- Section 1: What is Full Stack Development -->
+        <section id="fullstack" class="mb-5">
+            <h2 class="section-title">What is Full Stack Development?</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p class="lead">Full Stack Development refers to the development of both front-end and back-end portions of a web application.</p>
+                    
+                    <h4>Key Components:</h4>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><strong>Frontend:</strong> User interface and user experience (HTML, CSS, JavaScript)</li>
+                        <li class="list-group-item"><strong>Backend:</strong> Server-side logic, databases, and APIs</li>
+                        <li class="list-group-item"><strong>Database:</strong> Data storage and management</li>
+                        <li class="list-group-item"><strong>DevOps:</strong> Deployment and server management</li>
+                    </ul>
+
+                    <div class="interactive-demo">
+                        <h5>Full Stack Architecture Visualization</h5>
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <div class="p-3 bg-primary text-white rounded mb-2">Frontend</div>
+                                <small>HTML, CSS, JS</small>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-3 bg-success text-white rounded mb-2">Backend</div>
+                                <small>Server Logic</small>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="p-3 bg-warning text-white rounded mb-2">Database</div>
+                                <small>Data Storage</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card demo-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Why Full Stack?</h5>
+                            <ul class="list-unstyled">
+                                <li>✅ Complete project understanding</li>
+                                <li>✅ Versatile skill set</li>
+                                <li>✅ Better problem-solving</li>
+                                <li>✅ Career flexibility</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: HTML -->
+        <section id="html" class="mb-5">
+            <h2 class="section-title">HTML (HyperText Markup Language)</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>HTML is the standard markup language for creating web pages. It describes the structure of a web page using elements and tags.</p>
+                    
+                    <h5>Key HTML Concepts Demonstrated:</h5>
+                    <ul>
+                        <li>Semantic HTML5 elements</li>
+                        <li>Forms and input validation</li>
+                        <li>Tables and lists</li>
+                        <li>Links and navigation</li>
+                    </ul>
+
+                    <div class="code-example">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"&gt;<br>
+&lt;head&gt;<br>
+&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&lt;title&gt;My Page&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&nbsp;&nbsp;&lt;header&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Welcome&lt;/h1&gt;<br>
+&nbsp;&nbsp;&lt;/header&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="interactive-demo">
+                        <h5>Interactive HTML Form Demo</h5>
+                        <form id="htmlDemo" class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name:</label>
+                                <input type="text" class="form-control" id="name" required>
+                                <div class="invalid-feedback">Please provide a valid name.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Please provide a valid email.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message:</label>
+                                <textarea class="form-control" id="message" rows="3" required></textarea>
+                                <div class="invalid-feedback">Please provide a message.</div>
+                            </div>
+                            <button type="submit" class="btn btn-demo">Submit Form</button>
+                        </form>
+                        <div id="formResult" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: CSS -->
+        <section id="css" class="mb-5">
+            <h2 class="section-title">CSS (Cascading Style Sheets)</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>CSS is used to style and layout web pages. It controls the presentation, formatting, and layout of HTML elements.</p>
+                    
+                    <h5>CSS Features Demonstrated:</h5>
+                    <ul>
+                        <li>Flexbox and Grid layouts</li>
+                        <li>CSS Variables (Custom Properties)</li>
+                        <li>Animations and transitions</li>
+                        <li>Responsive design</li>
+                        <li>Pseudo-classes and pseudo-elements</li>
+                    </ul>
+
+                    <div class="code-example">
+:root {<br>
+&nbsp;&nbsp;--primary-color: #2c3e50;<br>
+&nbsp;&nbsp;--secondary-color: #3498db;<br>
+}<br><br>
+.demo-card {<br>
+&nbsp;&nbsp;transition: transform 0.3s ease;<br>
+&nbsp;&nbsp;box-shadow: 0 4px 6px rgba(0,0,0,0.1);<br>
+}<br><br>
+.demo-card:hover {<br>
+&nbsp;&nbsp;transform: translateY(-5px);<br>
+}
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="interactive-demo">
+                        <h5>CSS Animation Demo</h5>
+                        <div class="text-center">
+                            <div id="animationBox" style="width: 100px; height: 100px; background: linear-gradient(45deg, #3498db, #e74c3c); margin: 20px auto; border-radius: 10px; transition: all 0.5s ease;"></div>
+                            <button class="btn btn-demo" onclick="animateBox()">Animate Box</button>
+                        </div>
+                        
+                        <h6 class="mt-4">CSS Grid Demo</h6>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 15px;">
+                            <div style="background-color: #3498db; color: white; padding: 15px; text-align: center; border-radius: 5px;">Grid 1</div>
+                            <div style="background-color: #e74c3c; color: white; padding: 15px; text-align: center; border-radius: 5px;">Grid 2</div>
+                            <div style="background-color: #2ecc71; color: white; padding: 15px; text-align: center; border-radius: 5px;">Grid 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Bootstrap Framework -->
+        <section id="bootstrap" class="mb-5">
+            <h2 class="section-title">Bootstrap Framework</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>Bootstrap is a popular CSS framework that provides pre-built components and utilities for rapid web development.</p>
+                    
+                    <h5>Bootstrap Features Used:</h5>
+                    <ul>
+                        <li>Responsive grid system</li>
+                        <li>Navigation components</li>
+                        <li>Cards and buttons</li>
+                        <li>Form controls and validation</li>
+                        <li>Utility classes</li>
+                    </ul>
+
+                    <div class="code-example">
+&lt;div class="container"&gt;<br>
+&nbsp;&nbsp;&lt;div class="row"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-md-6"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="card-body"&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="card-title"&gt;Title&lt;/h5&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+&nbsp;&nbsp;&lt;/div&gt;<br>
+&lt;/div&gt;
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="interactive-demo">
+                        <h5>Bootstrap Component Generator</h5>
+                        
+                        <!-- Component Generator Controls -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Component Type:</label>
+                                <select class="form-select" id="componentType">
+                                    <option value="alert">Alert</option>
+                                    <option value="button">Button</option>
+                                    <option value="card">Card</option>
+                                    <option value="badge">Badge</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Style:</label>
+                                <select class="form-select" id="componentStyle">
+                                    <option value="primary">Primary</option>
+                                    <option value="success">Success</option>
+                                    <option value="danger">Danger</option>
+                                    <option value="warning">Warning</option>
+                                    <option value="info">Info</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Content:</label>
+                            <input type="text" class="form-control" id="componentContent" placeholder="Enter component text..." value="Sample Content">
+                        </div>
+                        
+                        <button class="btn btn-demo mb-3" onclick="generateComponent()">Generate Component</button>
+                        
+                        <!-- Generated Component Display -->
+                        <div id="generatedComponent" class="border p-3 rounded bg-light">
+                            <div class="alert alert-primary">Sample Content</div>
+                        </div>
+                        
+                        <!-- Code Display -->
+                        <div class="mt-3">
+                            <small class="text-muted">Generated HTML:</small>
+                            <div id="generatedCode" class="code-example" style="font-size: 12px;">
+                                &lt;div class="alert alert-primary"&gt;Sample Content&lt;/div&gt;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: JavaScript -->
+        <section id="javascript" class="mb-5">
+            <h2 class="section-title">JavaScript</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <p>JavaScript is a programming language that enables interactive web pages. It's an essential part of web applications alongside HTML and CSS.</p>
+                    
+                    <h5>JavaScript Concepts Demonstrated:</h5>
+                    <ul>
+                        <li>DOM manipulation</li>
+                        <li>Event handling</li>
+                        <li>Functions and variables</li>
+                        <li>Arrays and objects</li>
+                        <li>Local storage</li>
+                        <li>Form validation</li>
+                    </ul>
+
+                    <div class="code-example">
+function calculateTotal(items) {<br>
+&nbsp;&nbsp;let total = 0;<br>
+&nbsp;&nbsp;items.forEach(item => {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;total += item.price;<br>
+&nbsp;&nbsp;});<br>
+&nbsp;&nbsp;return total;<br>
+}<br><br>
+document.addEventListener('DOMContentLoaded', function() {<br>
+&nbsp;&nbsp;console.log('Page loaded!');<br>
+});
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="interactive-demo">
+                        <h5>Interactive JavaScript Demo</h5>
+                        
+                        <!-- Digital Clock -->
+                        <div class="mb-4 text-center">
+                            <h6>Digital Clock:</h6>
+                            <div id="digitalClock" style="font-size: 2rem; font-weight: bold; color: var(--secondary-color); font-family: 'Courier New', monospace; background: #f8f9fa; padding: 20px; border-radius: 10px; border: 2px solid var(--secondary-color);">
+                                00:00:00
+                            </div>
+                            <div class="mt-2">
+                                <button class="btn btn-demo btn-sm me-2" onclick="toggleClock()">Start/Stop</button>
+                                <button class="btn btn-outline-secondary btn-sm" onclick="toggleFormat()">12/24 Hour</button>
+                            </div>
+                            <div id="clockStatus" class="mt-2 text-muted">Clock is running</div>
+                        </div>
+
+                        <!-- Interactive Features -->
+                        <div class="mb-4">
+                            <h6>Clock Customization:</h6>
+                            <div class="row g-2">
+                                <div class="col-6">
+                                    <label class="form-label">Clock Color:</label>
+                                    <select class="form-select form-select-sm" id="clockColor" onchange="changeClockColor()">
+                                        <option value="#3498db">Blue</option>
+                                        <option value="#e74c3c">Red</option>
+                                        <option value="#2ecc71">Green</option>
+                                        <option value="#f39c12">Orange</option>
+                                        <option value="#9b59b6">Purple</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label">Time Zone:</label>
+                                    <select class="form-select form-select-sm" id="timeZone" onchange="updateClock()">
+                                        <option value="local">Local Time</option>
+                                        <option value="UTC">UTC</option>
+                                        <option value="America/New_York">New York</option>
+                                        <option value="Europe/London">London</option>
+                                        <option value="Asia/Tokyo">Tokyo</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clock Info -->
+                        <div>
+                            <h6>Clock Features:</h6>
+                            <ul class="list-unstyled small">
+                                <li>✅ Real-time updates every second</li>
+                                <li>✅ 12/24 hour format toggle</li>
+                                <li>✅ Multiple time zones</li>
+                                <li>✅ Customizable colors</li>
+                                <li>✅ Start/Stop functionality</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Nawadip Karki - CET138 Full Stack Development Portfolio</p>
+        <p>University of Sunderland - Assignment 1</p>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // HTML Form Demo
+        document.getElementById('htmlDemo').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (this.checkValidity()) {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                document.getElementById('formResult').innerHTML = `
+                    <div class="alert alert-success">
+                        <strong>Form Submitted Successfully!</strong><br>
+                        Name: ${name}<br>
+                        Email: ${email}<br>
+                        Message: ${message}
+                    </div>
+                `;
+                this.reset();
+            }
+            
+            this.classList.add('was-validated');
+        });
+
+        // CSS Animation Demo
+        function animateBox() {
+            const box = document.getElementById('animationBox');
+            const isRotated = box.style.transform.includes('rotate');
+            
+            if (isRotated) {
+                box.style.transform = 'rotate(0deg) scale(1)';
+                box.style.borderRadius = '10px';
+            } else {
+                box.style.transform = 'rotate(360deg) scale(1.2)';
+                box.style.borderRadius = '50%';
+            }
+        }
+
+        // Bootstrap Component Generator
+        function generateComponent() {
+            const type = document.getElementById('componentType').value;
+            const style = document.getElementById('componentStyle').value;
+            const content = document.getElementById('componentContent').value || 'Sample Content';
+            
+            let html = '';
+            let code = '';
+            
+            switch(type) {
+                case 'alert':
+                    html = `<div class="alert alert-${style} alert-dismissible fade show" role="alert">
+                        ${content}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>`;
+                    code = `&lt;div class="alert alert-${style}"&gt;${content}&lt;/div&gt;`;
+                    break;
+                    
+                case 'button':
+                    html = `<button class="btn btn-${style}">${content}</button>`;
+                    code = `&lt;button class="btn btn-${style}"&gt;${content}&lt;/button&gt;`;
+                    break;
+                    
+                case 'card':
+                    html = `<div class="card" style="max-width: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-${style}">${content}</h5>
+                            <p class="card-text">This is a sample card component generated dynamically.</p>
+                            <a href="#" class="btn btn-${style}">Action</a>
+                        </div>
+                    </div>`;
+                    code = `&lt;div class="card"&gt;&lt;div class="card-body"&gt;&lt;h5 class="card-title"&gt;${content}&lt;/h5&gt;&lt;/div&gt;&lt;/div&gt;`;
+                    break;
+                    
+                case 'badge':
+                    html = `<span class="badge bg-${style}">${content}</span>`;
+                    code = `&lt;span class="badge bg-${style}"&gt;${content}&lt;/span&gt;`;
+                    break;
+            }
+            
+            document.getElementById('generatedComponent').innerHTML = html;
+            document.getElementById('generatedCode').innerHTML = code;
+        }
+
+        // Digital Clock Demo
+        let clockInterval;
+        let clockRunning = true;
+        let is24Hour = true;
+
+        function updateClock() {
+            const clockElement = document.getElementById('digitalClock');
+            const timeZone = document.getElementById('timeZone').value;
+            
+            let now = new Date();
+            
+            // Handle different time zones
+            if (timeZone !== 'local') {
+                if (timeZone === 'UTC') {
+                    now = new Date(now.getTime() + (now.getTimezoneOffset() * 60000));
+                } else {
+                    // For other time zones, we'll use a simple offset approach
+                    const options = { timeZone: timeZone };
+                    now = new Date(now.toLocaleString("en-US", options));
+                }
+            }
+            
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+            let ampm = '';
+            
+            if (!is24Hour) {
+                ampm = hours >= 12 ? ' PM' : ' AM';
+                hours = hours % 12;
+                hours = hours ? hours : 12; // 0 should be 12
+            }
+            
+            // Add leading zeros
+            hours = hours.toString().padStart(2, '0');
+            minutes = minutes.toString().padStart(2, '0');
+            seconds = seconds.toString().padStart(2, '0');
+            
+            clockElement.textContent = `${hours}:${minutes}:${seconds}${ampm}`;
+        }
+
+        function startClock() {
+            if (!clockInterval) {
+                clockInterval = setInterval(updateClock, 1000);
+                updateClock(); // Update immediately
+            }
+        }
+
+        function stopClock() {
+            if (clockInterval) {
+                clearInterval(clockInterval);
+                clockInterval = null;
+            }
+        }
+
+        function toggleClock() {
+            if (clockRunning) {
+                stopClock();
+                document.getElementById('clockStatus').textContent = 'Clock is stopped';
+            } else {
+                startClock();
+                document.getElementById('clockStatus').textContent = 'Clock is running';
+            }
+            clockRunning = !clockRunning;
+        }
+
+        function toggleFormat() {
+            is24Hour = !is24Hour;
+            updateClock();
+        }
+
+        function changeClockColor() {
+            const color = document.getElementById('clockColor').value;
+            const clockElement = document.getElementById('digitalClock');
+            clockElement.style.color = color;
+            clockElement.style.borderColor = color;
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Nawadip Karki Portfolio Loaded Successfully!');
+            // Start the clock when page loads
+            startClock();
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97685ccc9311d8b9',t:'MTc1NjQzMTg1OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
